@@ -112,24 +112,3 @@
     nmap <leader>t :NERDTree<CR>
 
 " }
-
-" Specific Source Type Configurations {
-    
-    " CoffeeScript {
-        au FileType coffee set shiftwidth=4
-    " }
-    
-    " HTML {
-    " zencoding makes HTML editing easier
-    "#au FileType html set shiftwidth=2
-    "}
-
-    " Jade Templates {
-        au FileType jade set shiftwidth=4
-        au FileType jade set textwidth=120
-    "}
-
-    " Stylus CSS Generator {
-        au FileType styl set shiftwidth=4
-    "}
-" }
