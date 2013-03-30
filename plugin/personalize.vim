@@ -35,7 +35,6 @@
     " Leave Insert mode by hitting "jj" , not really used too much
     " inoremap jj <ESC>j
     
-    inoremap <S-Tab> <C-d>
     
     " Look and Feel and Colours ... {
         colorscheme solarized
@@ -43,11 +42,13 @@
     "}
 " }
 
-"" Editing Tweaks {
-"    
-"    " this will turn <CR> to empty a new line without entering insert mode
-"    map <CR> o<Esc>
-""}
+" Editing Tweaks {
+    " this will turn <CR> to empty a new line without entering insert mode
+    map <CR> o<Esc>
+
+    " this will allow Shift Tab in INSERT mode to detab
+    inoremap <S-Tab> <C-d>
+}
 "
 "
 "" Searching {
@@ -84,17 +85,16 @@
 "    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 "" }
 "
-"" Fuzzy Finder {
-"    " Fuzzy Finder tweaks
-"    nmap <leader>f :FufFile **/*<CR>
-"    nmap <leader>b :FufBuffer<CR>
-"    nmap <leader>l :FufLine<CR>
-"    let g:fuf_file_exclude = '\v\~$'
-"        \ . '|\.(o|exe|dll|bak|orig|swp|class)$'
-"        \ . '|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-"        \ . '|(^|[/\\])node_modules[/\\]'
-"        \ . '|(^|[/\\])generated[/\\]'
-"" }
+" Fuzzy Finder Tweaks {
+    nmap <leader>f :FufFile **/*<CR>
+    nmap <leader>b :FufBuffer<CR>
+    nmap <leader>l :FufLine<CR>
+    let g:fuf_file_exclude = '\v\~$'
+        \ . '|\.(o|exe|dll|bak|orig|swp|class)$'
+        \ . '|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+        \ . '|(^|[/\\])node_modules[/\\]'
+        \ . '|(^|[/\\])generated[/\\]'
+"}
 "
 "" Navigation Tweaks {
 "    " Tab Navigation, allows quick scrolling between tabs/viewports
