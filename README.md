@@ -10,3 +10,7 @@ why not manage my own tweaks there?
 ## Updating my tweaks
 
 Inside vim, `:BundleInstall!`
+
+## Misc
+
+* [vim Plugin Layout](http://learnvimscriptthehardway.stevelosh.com/chapters/42.html#vimautoload) - this was immensely helpful

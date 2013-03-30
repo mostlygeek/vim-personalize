@@ -121,7 +121,7 @@
     
     " HTML {
     " zencoding makes HTML editing easier
-        au FileType html set shiftwidth=2
+    "#au FileType html set shiftwidth=2
     "}
 
     " Jade Templates {
