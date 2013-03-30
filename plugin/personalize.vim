@@ -48,7 +48,7 @@
 
     " this will allow Shift Tab in INSERT mode to detab
     inoremap <S-Tab> <C-d>
-}
+"}
 "
 "
 "" Searching {
