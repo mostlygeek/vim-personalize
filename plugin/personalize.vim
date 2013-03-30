@@ -35,7 +35,6 @@
     " Leave Insert mode by hitting "jj" , not really used too much
     " inoremap jj <ESC>j
     
-    
     " Look and Feel and Colours ... {
         colorscheme solarized
         set background=dark
@@ -49,42 +48,42 @@
     " this will allow Shift Tab in INSERT mode to detab
     inoremap <S-Tab> <C-d>
 "}
-"
-"
-"" Searching {
-"    " Ignore cases in searches
-"    set ignorecase
-"
-"    " if search pattern contains an upper case char, it will do a case-sensitive
-"    " search
-"    set smartcase
-"
-"    " Tagname searching / moving
-"    nnoremap / /\v
-"    vnoremap / /\v
-"
-"    " smartcase = all lower case, case insensitve, w/ uppercase
-"    " do a case sensitive search
-"    set ignorecase
-"    set smartcase
-"
-"    " global searches by default
-"    set gdefault
-"
-"    " highlight search as you type
-"    set incsearch
-"    set showmatch
-"    set hlsearch
-"
-"    " clear out search, makes clearing highlights easier
-"    nnoremap <leader><space> :noh<cr>
-"" }
-"
-"" neocomplcache {
-"    " tab complete
-"    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-"" }
-"
+
+
+" Searching {
+    " Ignore cases in searches
+    set ignorecase
+
+    " if search pattern contains an upper case char, it will do a case-sensitive
+    " search
+    set smartcase
+
+    " Tagname searching / moving
+    nnoremap / /\v
+    vnoremap / /\v
+
+    " smartcase = all lower case, case insensitve, w/ uppercase
+    " do a case sensitive search
+    set ignorecase
+    set smartcase
+
+    " global searches by default
+    set gdefault
+
+    " highlight search as you type
+    set incsearch
+    set showmatch
+    set hlsearch
+
+    " clear out search, makes clearing highlights easier
+    nnoremap <leader><space> :noh<cr>
+" }
+
+" neocomplcache {
+    " tab complete
+    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" }
+
 " Fuzzy Finder Tweaks {
     nmap <leader>f :FufFile **/*<CR>
     nmap <leader>b :FufBuffer<CR>
@@ -95,42 +94,42 @@
         \ . '|(^|[/\\])node_modules[/\\]'
         \ . '|(^|[/\\])generated[/\\]'
 "}
-"
-"" Navigation Tweaks {
-"    " Tab Navigation, allows quick scrolling between tabs/viewports
-"    nmap <S-Tab> :tabn<CR>
-"    nmap ~ :tabp<CR>
-"    nmap <leader>n :tabnew<CR>
-"
-"    " make it easier to move between split windows
-"    " using ctrl+hjkl
-"    nnoremap <C-h> <C-w>h
-"    nnoremap <C-j> <C-w>j
-"    nnoremap <C-k> <C-w>k
-"    nnoremap <C-l> <C-w>l
-"    
-"    " Open NERDTree quickly
-"    nmap <leader>t :NERDTree<CR>
-"
-"" }
-"
-"" Specific Source Type Configurations {
-"    
-"    " CoffeeScript {
-"        au FileType coffee set shiftwidth=4
-"    " }
-"    
-"    " HTML {
-"    " zencoding makes HTML editing easier
-"        au FileType html set shiftwidth=2
-"    "}
-"
-"    " Jade Templates {
-"        au FileType jade set shiftwidth=4
-"        au FileType jade set textwidth=120
-"    "}
-"
-"    " Stylus CSS Generator {
-"        au FileType styl set shiftwidth=4
-"    "}
-"" }
+
+" Navigation Tweaks {
+    " Tab Navigation, allows quick scrolling between tabs/viewports
+    nmap <S-Tab> :tabn<CR>
+    nmap ~ :tabp<CR>
+    nmap <leader>n :tabnew<CR>
+
+    " make it easier to move between split windows
+    " using ctrl+hjkl
+    nnoremap <C-h> <C-w>h
+    nnoremap <C-j> <C-w>j
+    nnoremap <C-k> <C-w>k
+    nnoremap <C-l> <C-w>l
+    
+    " Open NERDTree quickly
+    nmap <leader>t :NERDTree<CR>
+
+" }
+
+" Specific Source Type Configurations {
+    
+    " CoffeeScript {
+        au FileType coffee set shiftwidth=4
+    " }
+    
+    " HTML {
+    " zencoding makes HTML editing easier
+        au FileType html set shiftwidth=2
+    "}
+
+    " Jade Templates {
+        au FileType jade set shiftwidth=4
+        au FileType jade set textwidth=120
+    "}
+
+    " Stylus CSS Generator {
+        au FileType styl set shiftwidth=4
+    "}
+" }
