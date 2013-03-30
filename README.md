@@ -14,3 +14,7 @@ Inside vim, `:BundleInstall!`
 ## Misc
 
 * [vim Plugin Layout](http://learnvimscriptthehardway.stevelosh.com/chapters/42.html#vimautoload) - this was immensely helpful
+
+## .vimrc
+
+This is mine, here as a reference. :)

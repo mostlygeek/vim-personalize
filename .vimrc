@@ -35,13 +35,10 @@ set nocompatible               " be iMproved
     Bundle "wavded/vim-stylus.git"
     Bundle "jelera/vim-javascript-syntax.git"
 
-    " Personalize
+    " Personalize vim to how I like it
     Bundle "mostlygeek/vim-personalize"
 
     " REQUIRED after all the Bundle initializations...
     filetype plugin indent on
 
-
     let g:neocomplcache_enable_at_startup = 1
-
-"
