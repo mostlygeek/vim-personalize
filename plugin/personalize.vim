@@ -114,10 +114,13 @@
 
     " Move around w/ EasyMotion w/ less key
     
-    " - (hyphen) will move backwards, same as <Leader><Leader>B
-    nmap - :call EasyMotion#WB(1, 1)<CR>
+    " - (hyphen) EasyMotion line updward
+    nmap - :call EasyMotion#JK(0, 1)<CR>
 
-    " = (equal) will move forwards (end of word) , same as <Leader><Leader>E 
-    nmap = :call EasyMotion#EW(0, 0)<CR>
+    " = (equal) EasyMotion line downward
+    nmap = :call EasyMotion#JK(0, 0)<CR>
+
+    " M0ar keys for easy motion jumps
+    let g:EasyMotion_keys = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 " }
