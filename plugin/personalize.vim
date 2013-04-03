@@ -40,6 +40,7 @@
         set background=dark
     "}
 " }
+"
 
 " Editing Tweaks {
     " this will turn <CR> to empty a new line without entering insert mode
@@ -110,5 +111,13 @@
     
     " Open NERDTree quickly
     nmap <leader>t :NERDTree<CR>
+
+    " Move around w/ EasyMotion w/ less key
+    
+    " - (hyphen) will move backwards, same as <Leader><Leader>B
+    nmap - :call EasyMotion#WB(1, 1)<CR>
+
+    " = (equal) will move forwards (end of word) , same as <Leader><Leader>E 
+    nmap = :call EasyMotion#EW(0, 0)<CR>
 
 " }
