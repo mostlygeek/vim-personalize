@@ -120,7 +120,17 @@
     " = (equal) EasyMotion line downward
     nmap = :call EasyMotion#JK(0, 0)<CR>
 
-    " M0ar keys for easy motion jumps
-    let g:EasyMotion_keys = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    " in combo w/ the shortcuts above, make the jumps easier 
+    " to reach w/ left hand on home row, but more repeats
+    "
+    " Notice the order of keys, since reaching for 
+    " "qwer" is a bit slower than "asdf" I intermix
+    " them to make jumping easier
+    let g:EasyMotion_keys = 'qawsedrf'
+
+    " change the highlight so it is easier to see
+    " w/ the solarized theme
+    hi EasyMotionTarget ctermbg=none ctermfg=white
+
 
 " }
