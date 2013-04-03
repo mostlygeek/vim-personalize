@@ -112,7 +112,9 @@
     " Open NERDTree quickly
     nmap <leader>t :NERDTree<CR>
 
+    " -------------------------------------- 
     " Move around w/ EasyMotion w/ less key
+    " -------------------------------------- 
     
     " - (hyphen) EasyMotion line updward
     nmap - :call EasyMotion#JK(0, 1)<CR>
