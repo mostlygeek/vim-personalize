@@ -48,6 +48,10 @@
 
     " this will allow Shift Tab in INSERT mode to detab
     inoremap <S-Tab> <C-d>
+
+    " abbreviations for common things i type
+    " :help :abbreviate
+    iab cl console.log
 "}
 
 
