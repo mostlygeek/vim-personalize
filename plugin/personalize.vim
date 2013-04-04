@@ -119,8 +119,14 @@
     " - (hyphen) EasyMotion line updward
     nmap - :call EasyMotion#JK(0, 1)<CR>
 
+    " _ (underscore) jump backward to beginning of word
+    nmap _ :call EasyMotion#WBW(0, 1)<CR>
+
     " = (equal) EasyMotion line downward
     nmap = :call EasyMotion#JK(0, 0)<CR>
+
+    " + jump forward to beginning of a word
+    nmap + :call EasyMotion#WBW(0, 0)<CR>
 
     " in combo w/ the shortcuts above, make the jumps easier 
     " to reach w/ left hand on home row, but more repeats
