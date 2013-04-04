@@ -52,6 +52,8 @@
     " abbreviations for common things i type
     " :help :abbreviate
     iab cl console.log
+    iab mo msg.out
+    iab me msg.err
 "}
 
 
