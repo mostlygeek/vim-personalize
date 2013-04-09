@@ -36,8 +36,8 @@
     " inoremap jj <ESC>j
     
     " Look and Feel and Colours ... {
-        colorscheme solarized
-        set background=dark
+    "   colorscheme solarized
+    "   set background=dark
     "}
 " }
 "
