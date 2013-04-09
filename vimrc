@@ -42,3 +42,9 @@ set nocompatible               " be iMproved
     filetype plugin indent on
 
     let g:neocomplcache_enable_at_startup = 1
+
+    " Set color schemes 
+    " Example
+    "
+    " colorscheme wombat256mod
+    " set background=dark
