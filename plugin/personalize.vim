@@ -146,5 +146,10 @@
     " w/ the solarized theme
     hi EasyMotionTarget ctermbg=none ctermfg=white
 
+" }
 
+" Misc Tweaks {
+    " fix bash $() match as an Error for syntax highlighting
+    " ref: http://stackoverflow.com/a/5423808
+    let g:is_posix = 1
 " }
