@@ -53,7 +53,7 @@
     " :help :abbreviate
     iab cl console.log
     iab mo msg.out
-    iab me msg.err
+    iab mer msg.err
 "}
 
 
