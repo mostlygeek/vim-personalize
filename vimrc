@@ -34,6 +34,7 @@ set nocompatible               " be iMproved
     Bundle "digitaltoad/vim-jade.git"
     Bundle "wavded/vim-stylus.git"
     Bundle "jelera/vim-javascript-syntax.git"
+    Bundle "briancollins/vim-jst.git"
 
     " Personalize vim to how I like it
     Bundle "mostlygeek/vim-personalize"
