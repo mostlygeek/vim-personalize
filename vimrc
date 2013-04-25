@@ -46,3 +46,14 @@ set nocompatible               " be iMproved
 
     " Set color schemes 
     colorscheme mostlygeek
+
+    " Show syntax highlighting groups for word under cursor
+    " using Ctrl+Shift+P
+    " See: http://vimcasts.org/episodes/creating-colorschemes-for-vim/
+    nmap <C-S-P> :call <SID>SynStack()<CR>
+    function! <SID>SynStack()
+      if !exists("*synstack")
+        return
+      endif
+      echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+    endfunc
