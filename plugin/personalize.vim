@@ -53,7 +53,7 @@
     " :help :abbreviate
     iabbrev cl console.log
     iabbrev mo msg.out
-    iabbrev me msg.err
+    iabbrev mer msg.err
     iabbrev sne should.not.exist
 "}
 
@@ -147,5 +147,10 @@
     " w/ the solarized theme
     hi EasyMotionTarget ctermbg=none ctermfg=white
 
+" }
 
+" Misc Tweaks {
+    " fix bash $() match as an Error for syntax highlighting
+    " ref: http://stackoverflow.com/a/5423808
+    let g:is_posix = 1
 " }

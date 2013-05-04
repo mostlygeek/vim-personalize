@@ -34,6 +34,7 @@ set nocompatible               " be iMproved
     Bundle "digitaltoad/vim-jade.git"
     Bundle "wavded/vim-stylus.git"
     Bundle "jelera/vim-javascript-syntax.git"
+    Bundle "briancollins/vim-jst.git"
 
     " Personalize vim to how I like it
     Bundle "mostlygeek/vim-personalize"
@@ -44,7 +45,4 @@ set nocompatible               " be iMproved
     let g:neocomplcache_enable_at_startup = 1
 
     " Set color schemes 
-    " Example
-    "
-    " colorscheme wombat256mod
-    " set background=dark
+    colorscheme mostlygeek
