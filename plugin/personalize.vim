@@ -13,6 +13,9 @@
     set shiftwidth=4
     set softtabstop=4
 
+    " useful when writing go programs
+    set tabstop=4
+
     " Better backspace handling"
     " ref: http://vim.wikia.com/wiki/Erasing_previously_entered_characters_in_insert_mode
     set backspace=indent,eol,start
