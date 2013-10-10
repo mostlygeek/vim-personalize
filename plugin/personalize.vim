@@ -157,3 +157,10 @@
     " ref: http://stackoverflow.com/a/5423808
     let g:is_posix = 1
 " }
+
+" Folding {
+    " toggle folding w/ spacebar in normal mode
+    nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+    " visual select, hit space to create a new fold
+    vnoremap <Space> zf
+" }
