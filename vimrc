@@ -28,6 +28,7 @@ set nocompatible               " be iMproved
     Bundle "godlygeek/tabular.git"
     Bundle "tpope/vim-surround.git"
     Bundle "tpope/vim-fugitive.git"
+    Bundle "vim-scripts/ShowMarks.git"
 
     " Syntax Highlighters
     Bundle "kchmck/vim-coffee-script.git"
@@ -37,6 +38,7 @@ set nocompatible               " be iMproved
     Bundle "briancollins/vim-jst.git"
     Bundle "elzr/vim-json.git"
     Bundle "jnwhiteh/vim-golang"
+
 
     " Personalize vim to how I like it
     Bundle "mostlygeek/vim-personalize"
