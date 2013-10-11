@@ -136,6 +136,7 @@ set nocompatible               " be iMproved
     autocmd FileType coffee,js,styl,css,go,py autocmd BufWritePre <buffer> :%s/\s\+$//e
 
     autocmd FileType json setlocal foldmethod=syntax
+    autocmd FileType json set shiftwidth=2
 
     " use \jf to format json
     map <leader>jf <Esc>:%!python -m json.tool<CR>
