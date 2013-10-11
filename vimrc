@@ -143,6 +143,7 @@ set nocompatible               " be iMproved
 set modelines=5
 
     " use \jf to format json
-    map <leader>jf <Esc>:%!python -m json.tool<CR>
+    " npm install -g underscore-cli
+    map <leader>jf <Esc>:%!underscore print<CR>
 
 set modelines=5
