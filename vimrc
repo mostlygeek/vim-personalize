@@ -133,7 +133,7 @@ set nocompatible               " be iMproved
 
     " Trim tailing white spaces
     " ref: http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
-    autocmd FileType coffee,js,styl,css,go,py autocmd BufWritePre <buffer> :%s/\s\+$//e
+    autocmd FileType coffee,js,styl,css,go,py,jade autocmd BufWritePre <buffer> :%s/\s\+$//e
 
     autocmd FileType json setlocal foldmethod=syntax
     autocmd FileType json set shiftwidth=2
