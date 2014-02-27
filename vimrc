@@ -38,7 +38,7 @@ set nocompatible               " be iMproved
     Bundle "briancollins/vim-jst.git"
     Bundle "elzr/vim-json.git"
     Bundle "jnwhiteh/vim-golang"
-
+    Bundle "rodjek/vim-puppet"
 
     " Personalize vim to how I like it
     Bundle "mostlygeek/vim-personalize"
