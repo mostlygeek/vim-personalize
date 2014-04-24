@@ -74,3 +74,6 @@ autocmd FileType json set shiftwidth=2
 map <leader>jf <Esc>:%!python -m json.tool<CR>
 
 set modelines=5
+
+" vim-json, disable concealing of quotes
+let g:vim_json_syntax_conceal = 0
