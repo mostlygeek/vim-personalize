@@ -36,7 +36,7 @@ set nocompatible               " be iMproved
     Bundle "wavded/vim-stylus.git"
     Bundle "jelera/vim-javascript-syntax.git"
     Bundle "briancollins/vim-jst.git"
-    Bundle "elzr/vim-json.git"
+    Bundle "mostlygeek/vim-json.git"
     Bundle "jnwhiteh/vim-golang"
     Bundle "rodjek/vim-puppet"
 
