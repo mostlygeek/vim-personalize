@@ -37,8 +37,9 @@ set nocompatible               " be iMproved
     Bundle "jelera/vim-javascript-syntax.git"
     Bundle "briancollins/vim-jst.git"
     Bundle "mostlygeek/vim-json.git"
-    Bundle "jnwhiteh/vim-golang"
+    Bundle "fatih/vim-go"
     Bundle "rodjek/vim-puppet"
+    Bundle "vim-scripts/SQLComplete.vim"
 
     " Personalize vim to how I like it
     Bundle "mostlygeek/vim-personalize"
@@ -69,6 +70,8 @@ autocmd FileType c,coffee,js,styl,css,go,py,jade autocmd BufWritePre <buffer> :%
 
 autocmd FileType json setlocal foldmethod=syntax
 autocmd FileType json set shiftwidth=2
+
+autocmd BufRead,BufNewFile *.sql set filetype=mysql
 
 " use \jf to format json
 map <leader>jf <Esc>:%!python -m json.tool<CR>
