@@ -79,3 +79,11 @@ set modelines=5
 
 " vim-json, disable concealing of quotes
 let g:vim_json_syntax_conceal = 0
+
+" custom go tweaks for vim-go
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
