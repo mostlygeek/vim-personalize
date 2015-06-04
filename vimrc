@@ -15,11 +15,8 @@ set nocompatible               " be iMproved
     "
     Bundle 'gmarik/vundle'
     
-    Bundle "altercation/vim-colors-solarized.git"
-    
     " Utilities and Helpers
     Bundle "L9"
-    Bundle 'FuzzyFinder'
     Bundle "Raimondi/delimitMate"
     Bundle "Lokaltog/vim-easymotion.git"
     Bundle "scrooloose/nerdtree.git"
@@ -27,7 +24,6 @@ set nocompatible               " be iMproved
     Bundle "godlygeek/tabular.git"
     Bundle "tpope/vim-surround.git"
     Bundle "tpope/vim-fugitive.git"
-    Bundle "vim-scripts/ShowMarks.git"
 
     " Syntax Highlighters
     Bundle "kchmck/vim-coffee-script.git"
