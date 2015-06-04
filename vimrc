@@ -1,46 +1,40 @@
 set nocompatible               " be iMproved
+filetype off                   " required for vundle
 
 " Vundle {
-    " filetype must be off here for Vundle ...
-    filetype off
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
 
-    " REQUIRED: let Vundle manage Vundle
-    " After updating these run: 
-    "
-    " :source $MYVIMRC
-    " :BundleInstall    - install(update) bundles
-    "   - probably need to :source $MYVIMRC first 
-    "
-    Bundle 'gmarik/vundle'
+    Plugin 'gmarik/Vundle.vim'
     
     " Utilities and Helpers
-    Bundle "L9"
-    Bundle "Raimondi/delimitMate"
-    Bundle "Lokaltog/vim-easymotion.git"
-    Bundle "scrooloose/nerdtree.git"
-    Bundle "Shougo/neocomplcache.git"
-    Bundle "godlygeek/tabular.git"
-    Bundle "tpope/vim-surround.git"
-    Bundle "tpope/vim-fugitive.git"
+    Plugin 'L9'
+    Plugin 'Raimondi/delimitMate'
+    Plugin 'Lokaltog/vim-easymotion.git'
+    Plugin 'scrooloose/nerdtree.git'
+    Plugin 'Shougo/neocomplcache.git'
+    Plugin 'godlygeek/tabular.git'
+    Plugin 'tpope/vim-surround.git'
+    Plugin 'tpope/vim-fugitive.git'
 
     " Syntax Highlighters
-    Bundle "kchmck/vim-coffee-script.git"
-    Bundle "digitaltoad/vim-jade.git"
-    Bundle "wavded/vim-stylus.git"
-    Bundle "jelera/vim-javascript-syntax.git"
-    Bundle "briancollins/vim-jst.git"
-    Bundle "mostlygeek/vim-json.git"
-    Bundle "fatih/vim-go"
-    Bundle "rodjek/vim-puppet"
-    Bundle "vim-scripts/SQLComplete.vim"
+    Plugin 'kchmck/vim-coffee-script.git'
+    Plugin 'digitaltoad/vim-jade.git'
+    Plugin 'wavded/vim-stylus.git'
+    Plugin 'jelera/vim-javascript-syntax.git'
+    Plugin 'briancollins/vim-jst.git'
+    Plugin 'mostlygeek/vim-json.git'
+    Plugin 'fatih/vim-go'
+    Plugin 'rodjek/vim-puppet'
+    Plugin 'vim-scripts/SQLComplete.vim'
 
     " Personalize vim to how I like it
-    Bundle "mostlygeek/vim-personalize"
+    Plugin 'mostlygeek/vim-personalize'
 
-    " REQUIRED after all the Bundle initializations...
+    " REQUIRED after all the Plugin initializations...
+    call vundle#end()
     filetype plugin indent on
+
 " } end vundle
 
 let g:neocomplcache_enable_at_startup = 1
