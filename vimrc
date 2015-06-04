@@ -17,7 +17,7 @@ filetype off                   " required for vundle
     Plugin 'tpope/vim-surround.git'
     Plugin 'tpope/vim-fugitive.git'
 
-    " Syntax Highlighters
+    " Syntax Highlighters / Tools
     Plugin 'kchmck/vim-coffee-script.git'
     Plugin 'digitaltoad/vim-jade.git'
     Plugin 'wavded/vim-stylus.git'
@@ -27,6 +27,7 @@ filetype off                   " required for vundle
     Plugin 'fatih/vim-go'
     Plugin 'rodjek/vim-puppet'
     Plugin 'vim-scripts/SQLComplete.vim'
+    Plugin 'Chiel92/vim-autoformat'
 
     " Personalize vim to how I like it
     Plugin 'mostlygeek/vim-personalize'
@@ -64,6 +65,9 @@ autocmd BufRead,BufNewFile *.sql set filetype=mysql
 
 " use \jf to format json
 map <leader>jf <Esc>:%!python -m json.tool<CR>
+
+" map \f to autoformat
+map <leader>f <Esc>:Autoformat<CR>
 
 set modelines=5
 
