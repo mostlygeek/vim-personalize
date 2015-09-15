@@ -5,7 +5,7 @@ filetype off                   " required for vundle
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
 
-    Plugin 'gmarik/Vundle.vim'
+    Plugin 'VundleVim/Vundle.vim'
     
     " Utilities and Helpers
     Plugin 'L9'
