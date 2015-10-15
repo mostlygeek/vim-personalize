@@ -1,46 +1,44 @@
 set nocompatible               " be iMproved
 filetype off                   " required for vundle
 
-" Vundle {
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
+" Installation using https://github.com/junegunn/vim-plug
+" hints:  reload config: source ~/.vimrc, install: PluginInstall
+"
+call plug#begin('~/.vim/plugged')
 
-    Plugin 'gmarik/Vundle.vim'
-    
-    " Utilities and Helpers
-    Plugin 'L9'
-    Plugin 'Raimondi/delimitMate'
-    Plugin 'Lokaltog/vim-easymotion.git'
-    Plugin 'scrooloose/nerdtree.git'
-    Plugin 'Shougo/neocomplcache.git'
-    Plugin 'godlygeek/tabular.git'
-    Plugin 'tpope/vim-surround.git'
-    Plugin 'tpope/vim-fugitive.git'
+    Plug 'L9'
+    Plug 'Raimondi/delimitMate'
+    Plug 'Lokaltog/vim-easymotion'
+    Plug 'scrooloose/nerdtree'
+    Plug 'Shougo/neocomplcache'
+    Plug 'godlygeek/tabular'
+    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-fugitive'
 
-    " Syntax Highlighters / Tools
-    Plugin 'kchmck/vim-coffee-script.git'
-    Plugin 'digitaltoad/vim-jade.git'
-    Plugin 'wavded/vim-stylus.git'
-    Plugin 'jelera/vim-javascript-syntax.git'
-    Plugin 'briancollins/vim-jst.git'
-    Plugin 'mostlygeek/vim-json.git'
-    Plugin 'fatih/vim-go'
-    Plugin 'rodjek/vim-puppet'
-    Plugin 'vim-scripts/SQLComplete.vim'
-    Plugin 'Chiel92/vim-autoformat'
+    Plug 'kchmck/vim-coffee-script'
+    Plug 'digitaltoad/vim-jade'
+    Plug 'wavded/vim-stylus'
+    Plug 'jelera/vim-javascript-syntax'
+    Plug 'briancollins/vim-jst'
+    Plug 'mostlygeek/vim-json'
+    Plug 'fatih/vim-go'
+    Plug 'rodjek/vim-puppet'
+    Plug 'vim-scripts/SQLComplete.vim'
+    Plug 'Chiel92/vim-autoformat'
 
     " Personalize vim to how I like it
-    Plugin 'mostlygeek/vim-personalize'
+    Plug 'mostlygeek/vim-personalize'
 
-    " REQUIRED after all the Plugin initializations...
-    call vundle#end()
-    filetype plugin indent on
+    " Colour Schemes
+    Plug 'dylanaraps/crayon'
 
-" } end vundle
+call plug#end()
 
 let g:neocomplcache_enable_at_startup = 1
 
 " Set color schemes 
+" Using iterm2 - set terminal to: xterm-256color
+" Use Dark background preset in colors
 colorscheme mostlygeek
 
 " Show syntax highlighting groups for word under cursor
