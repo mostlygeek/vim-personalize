@@ -39,7 +39,7 @@ let g:neocomplcache_enable_at_startup = 1
 " Set color schemes 
 " Using iterm2 - set terminal to: xterm-256color
 " Use Dark background preset in colors
-colorscheme mostlygeek
+"colorscheme mostlygeek
 
 " Show syntax highlighting groups for word under cursor
 " using Ctrl+Shift+P
