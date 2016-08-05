@@ -84,3 +84,7 @@ let g:go_highlight_build_constraints = 1
 " kill whitespace
 let g:DeleteTrailingWhitespace = 1
 let g:DeleteTrailingWhitespace_Action = 'delete'
+
+" hmm how will this affect bash? 
+" fix for zsh on freebsd 
+set encoding=utf-8
