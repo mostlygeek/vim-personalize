@@ -5,8 +5,13 @@ filetype off                   " required for vundle
 " hints:  reload config: source ~/.vimrc, install: PlugInstall
 "
 call plug#begin('~/.vim/plugged')
+    " Personalize vim to how I like it
+    Plug 'mostlygeek/vim-personalize'
 
-    Plug 'L9'
+    " Colour Schemes
+    Plug 'mostlygeek/rdark-terminal'
+
+"    Plug 'L9'
     Plug 'Raimondi/delimitMate'
     Plug 'Lokaltog/vim-easymotion'
     Plug 'scrooloose/nerdtree'
@@ -16,26 +21,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'jelera/vim-javascript-syntax'
     Plug 'mostlygeek/vim-json'
     Plug 'fatih/vim-go'
-    Plug 'rodjek/vim-puppet'
     Plug 'vim-scripts/SQLComplete.vim'
-    Plug 'Chiel92/vim-autoformat'
     Plug 'vim-scripts/DeleteTrailingWhitespace'
     Plug 'vim-scripts/ShowTrailingWhitespace'
+    Plug 'jparise/vim-graphql'
 
-    " from a another time...
-    "Plug 'tpope/vim-fugitive'
-    "Plug 'kchmck/vim-coffee-script'
-    "Plug 'digitaltoad/vim-jade'
-    "Plug 'wavded/vim-stylus'
-    "Plug 'briancollins/vim-jst'
-
-    " Personalize vim to how I like it
-    Plug 'mostlygeek/vim-personalize'
-
-    " Colour Schemes
-    Plug 'mostlygeek/rdark-terminal'
-
-call plug#end()
+    call plug#end()
 
 let g:neocomplcache_enable_at_startup = 1
 
@@ -45,7 +36,7 @@ let g:neocomplcache_enable_at_startup = 1
 colorscheme rdark-terminal
 let g:ShowTrailingWhitespace = 1
 highlight ShowTrailingWhitespace ctermbg=Red guibg=Red
-
+"
 " Show syntax highlighting groups for word under cursor
 " using Ctrl+Shift+P
 " See: http://vimcasts.org/episodes/creating-colorschemes-for-vim/
@@ -70,8 +61,6 @@ map <leader>f <Esc>:Autoformat<CR>
 
 set modelines=5
 
-" vim-json, disable concealing of quotes
-let g:vim_json_syntax_conceal = 0
 
 " custom go tweaks for vim-go
 let g:go_fmt_command = "goimports"
@@ -85,6 +74,13 @@ let g:go_highlight_build_constraints = 1
 let g:DeleteTrailingWhitespace = 1
 let g:DeleteTrailingWhitespace_Action = 'delete'
 
-" hmm how will this affect bash? 
-" fix for zsh on freebsd 
-set encoding=utf-8
+" change status bar colour based on insert mode
+" first, enable status line always
+set laststatus=2
+
+" now set it up to change the status line based on mode
+if version >= 700
+  au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
+  au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=grey gui=bold,reverse
+endif
+
