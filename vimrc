@@ -11,11 +11,9 @@ call plug#begin('~/.vim/plugged')
     " Colour Schemes
     Plug 'mostlygeek/rdark-terminal'
 
-"    Plug 'L9'
     Plug 'Raimondi/delimitMate'
     Plug 'Lokaltog/vim-easymotion'
     Plug 'scrooloose/nerdtree'
-    Plug 'Shougo/neocomplcache'
     Plug 'godlygeek/tabular'
     Plug 'tpope/vim-surround'
     Plug 'jelera/vim-javascript-syntax'
@@ -25,10 +23,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-scripts/DeleteTrailingWhitespace'
     Plug 'vim-scripts/ShowTrailingWhitespace'
     Plug 'jparise/vim-graphql'
+call plug#end()
 
-    call plug#end()
-
-let g:neocomplcache_enable_at_startup = 1
+" enable autocomplete
+set completeopt+=menuone,noselect,popup
+set autocomplete
 
 " Set color schemes
 " Using iterm2 - set terminal to: xterm-256color
